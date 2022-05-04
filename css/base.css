@@ -1,3 +1,64 @@
-h1 {
-    color: red;
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    }
+
+
+:root {
+    --main-background-color: #FFFFFF;
+    --background-color--transparent: rgb(0,0,0,0);
+    --font-color-primary: rgb(255,255,255);
+    --font-color-secondary: rgb(0,0,0);
+    --logos-color: rgb(235,234,235);
+    --button-color: rgb(196,183,200);
+    --font-size--base: 1.6rem;
+    --font-size-h2--desktop: 6.2rem;
+    --font-size-h3--mobile: 2.5rem;
+    --font-size-h3--desktop: 4rem;
+    --font-weight--bold: 700;
+    --font-weight--lighter: 100;
+    /* --button-width--primary: 15.5rem;
+    --button-height--primary: 6.3rem;
+    --button-width-primary--desktop: 20rem;
+    --button-height-primary--desktop: 6.2rem;
+    --button-width-secondary--desktop: 13rem;
+    --button-height-secondary--desktop: 4.5rem;
+    --button-border--style: none;
+    --input-width--primary: 24rem;
+    --input-width--secondary: 12rem;
+    --input-height--primary: 5.5rem;
+    --input-height--secondary: 6rem;
+    --input-border--style: none; */
+    --space--xs: 0.5rem;
+    --space--s: 1rem;
+    --space--m: 1.5rem;
+    --space--l: 2rem;
+    --space--xl: 2.5rem;
+    --space--xxl: 3rem;
+}
+
+*    {
+    box-sizing: border-box
+    }
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .section--first {
+        background-image: url(../images/first-background-mobile.bmp);
+        min-height: 90rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+    }
+
+}
+
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 768px) {
+
 }
