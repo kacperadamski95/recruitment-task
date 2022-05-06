@@ -46,7 +46,7 @@ html {
 /* Mobile */
 @media only screen and (max-width: 768px) {
     .section--first {
-        background-image: url(../images/first-background-mobile.bmp);
+        background-image: url(../images/first-background-mobile.jpeg);
         min-height: 90rem;
         background-repeat: no-repeat;
         background-position: center;
@@ -54,11 +54,28 @@ html {
         width: 100vw;
     }
 
+    header {
+        display: none;
+    }
+
+    .contact--links--desktop {
+        display: none;
+    }
 }
 
 
 
 /* Desktop and tablet */
 @media only screen and (min-width: 768px) {
+    .navigation--mobile {
+        display: none;
+    }
 
+    .contact--links--mobile {
+        display: none;
+    }
+
+    .main-icon--mobile {
+        display: none;
+    }
 }

@@ -33,29 +33,70 @@
 
     <!--	styles-->
     <link href="css/base.css" type="text/css" rel="stylesheet">
-
     <!--	/styles-->
+
+    <!-- Scripts -->
     <script src="js/menu.js" type="text/javascript"></script>
+    <script defer src="js/router.js"></script>
+    <script defer src="js/route.js"></script>
+    <script defer src="js/app.js"></script>
+    <!-- /Scripts -->
+    
 </head>
 
 <body>
     <header>
-        <nav>
-            
+        <nav class="navigation--desktop">
+            <div>
+                <a href="#index"><img src="images/ApartPark-icon-light.png"></a>
+                <a href="#static-page">Apartamenty</a>
+                <a href="#static-page">Galeria</a>
+                <a href="#static-page">Opinie</a>
+                <a href="#static-page">Poznaj Apartpark</a>
+                <a href="#static-page">Atrakcje</a>
+                <a href="#static-page">Kontakt</a>
+            </div>
+            <div>
+                <div>
+                <span>GWARANCJA NAJNIŻSZEJ CENY</span>
+                </div>
+                <div>
+                    <button>15.02
+                        <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8H32" stroke="#82C3CA"></path>
+                        <path d="M26.5 1C27 3.33333 28.9 8 32.5 8" stroke="#82C3CA"></path>
+                        <path d="M26.5 15C27 12.6667 28.9 8 32.5 8" stroke="#82C3CA"></path>
+                        </svg>17.02</button>
+                    <button>REZERWUJ ONLINE</button>
+                        <label hidden for="lang">Choose language</label>
+                        <select name="lang" id="lang">
+                            <option value="Polish">PL</option>
+                            <option value="English">ENG</option>
+                            <option value="Deutsch">DE</option>
+                        </select>
+                </div>
+            </div>
         </nav>
+        <hr>
     </header>
 
     <main>
         <section class="section--first">
-            <img src="images/ApartPark-icon.bmp" class="logo--icon">
+            <img src="images/ApartPark-icon-light.png" class="main-icon--mobile">
             <h1>Apartamenty Świnoujście</h1>
             <span>Doskonale zaplanowany wypoczynek</span>
             <span>ODKRYJ APARTPARK</span>
+            <div class="contact--links--desktop">
+                <a href="https://www.facebook.com/apartparkbaltichome/"><img src="images/facebook-icon.png"></a>
+                <a href="https://www.instagram.com/apart_park/"><img src="images/instagram-icon.png"></a>
+                <a href="https://www.youtube.com/watch?v=letAdh5Q2OU"><img src="images/youtube-icon.png"></a>
+            </div>
         </section>
         <section class="section--second">
             <p>KOMFORTOWY WYPOCZYNEK</p>
             <h2>Odkryj Apartpark</h2>
-            <p>Zobacz apartamenty w pierwszej linii nadmorskiej zabudowy. Każdy z nich przygotowaliśmy z myślą o Twoich wakacjach. Dlatego oferujemy również wyżywienie na miejscu oraz usługę hotelową w standardzie. 
+            <p>Zobacz apartamenty w pierwszej linii nadmorskiej zabudowy. Każdy z nich przygotowaliśmy z myślą o Twoich
+                wakacjach. Dlatego oferujemy również wyżywienie na miejscu oraz usługę hotelową w standardzie.
             </p>
             <div>
                 <a href="index.html"><span>O NAS</span></a>
@@ -67,14 +108,206 @@
             </div>
             <div class="overlapping--images">
                 <img src="/images/section-first-image.png">
-                <img src="/images/section-second-image.bmp">
-                <img src="/images/facebook-icon.bmp">
+                <img src="/images/section-second-image.png">
+                <img src="/images/section-third-image.png">
             </div>
+        </section>
+        <section class="section--third">
+            <div>
+                <div>
+                    <hr>
+                    <span>01</span>
+                </div>
+                <div>
+                    <h3>Doskonała lokalizacja</h3>
+                    <p>Szum fal i odgłosy mew na rozgrzanej słońcem plaży to Twoje wymarzone wakacje. Aby były idealne,
+                    potrzebujesz tylko luksusowego apartamentu, położonego nad samym morzem. Dokładnie: 300 metrów
+                    od plaży.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div>
+                <div>
+                    <hr>
+                    <span>02</span>
+                </div>
+                <div>
+                    <h3>Pełny komfort</h3>
+                    <p>Wśród 370 apartamentów znajdziesz swój wymarzony z przestronną sypialnią i w pełni wyposażonym aneksem kuchennym. 
+                    Zapraszamy do strefy relaksu na terenie obiektu oraz naszej wyjątkowej restauracji Sofa Cafe i polecanej restauracji Sofa Bistro. 
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div>
+                <div>
+                    <hr>
+                    <span>03</span>
+                </div>
+                <div>
+                    <h3>Idealne wakacje</h3>
+                    <p>Czekają na Ciebie czysta plaża 
+                    w Świnoujściu oraz wiele innych atrakcji: od interesujących obiektów historycznych po możliwość uprawiania sportów ekstremalnych. A wszystko to tuż nad polskim morzem.                         
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section--fourth">
+            <p>FUNKCJONALNE I LUKSUSOWE</p>
+            <h2>Nadmorskie apartamenty Apartpark</h2>
+            <p>Zobacz apartamenty z widokiem 
+                na morze. Każdy jest komfortowy, 
+                ale również funkcjonalny. Przygotowany 
+                z myślą o rodzinach z dziećmi oraz Gościach, którzy doceniają wnętrza urządzone w nowoczesnym stylu. 
+            </p>
+            <!-- SLIDER -->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img1.jpg" style="width:100%">
+                <span>Apartament Rubus 402<span>
+                <span>2 osoby /</span>
+                <span>jedna sypialnia /</span>
+                <span>40m2</span>
+                <br>
+                <span>*Śniadanie wliczone w cene</span>
+                <br>
+                <a href="apartament1">Zobacz apartament</a>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img2.jpg" style="width:100%">
+                <span>Apartament Rubus 402<span>
+                <span>2 osoby /</span>
+                <span>jedna sypialnia /</span>
+                <span>40m2</span>
+                <br>
+                <span>*Śniadanie wliczone w cene</span>
+                <br>
+                <a href="apartament1">Zobacz apartament</a>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img3.jpg" style="width:100%">
+                <span>Apartament Rubus 402<span>
+                <span>2 osoby /</span>
+                <span>jedna sypialnia /</span>
+                <span>40m2</span>
+                <br>
+                <span>*Śniadanie wliczone w cene</span>
+                <br>
+                <a href="apartament1">Zobacz apartament</a>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <a>Wszystkie apartamenty 
+                <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8H32" stroke="#82C3CA"></path>
+                <path d="M26.5 1C27 3.33333 28.9 8 32.5 8" stroke="#82C3CA"></path>
+                <path d="M26.5 15C27 12.6667 28.9 8 32.5 8" stroke="#82C3CA"></path>
+                </svg> 
+            </a>
         </section>
     </main>
 
     <footer>
-
+        <img src="images/ApartPark-icon.png" class="main-icon--mobile">
+        <h2>ApartPark<br>Baltic Home S.C.</h2>
+        <p>ul. Uzdrowiskowa 48, 72-600 Świnoujście</p>
+        <div class="contact--links--mobile">
+            <a href="https://www.facebook.com/apartparkbaltichome/"><img src="images/facebook-icon.png"></a>
+            <a href="https://www.instagram.com/apart_park/"><img src="images/instagram-icon.png"></a>
+            <a href="https://www.youtube.com/watch?v=letAdh5Q2OU"><img src="images/youtube-icon.png"></a>
+        </div>
+        <hr>
+        <div>
+            <ul>
+                <li>Poznaj Apartpark</li>
+                <li>Znajdź apartament</li>
+                <li>Zarezerwuj pobyt</li>
+                <li>Sofa Bistro</li>
+                <li>Sofa Cafe</li>
+            </ul>
+            <ul>
+                <li>Atrakcje</li>
+                <li>Współpraca</li>
+                <li>Blog</li>
+                <li>Kontakt</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <hr>
+            </div>
+            <div class="form">
+                <h3>Czekamy na Ciebie</h3>
+                <form id="sign-up-form" class="sign-up-form">
+                    <label hidden for="name">Imię i nazwisko</label>
+                    <input id="name" name="Name" type="text" minlength="1" maxlength="100"
+                        placeholder="Imię i nazwisko" required>
+                    <label hidden for="e-mail">E-mail lub nr telefonu</label>
+                    <input id="e-mail" name="E-mail" type="text" minlength="1" maxlength="100"
+                        placeholder="Adres E-mail lub nr telefonu" required>
+                    <label hidden for="message">Wiadomość</label>
+                    <input id="message" name="Message" type="text" minlength="1" maxlength="100"
+                        placeholder="Wiadomość" required>
+                </form>
+                <button>Wyślij wiadomość
+                    <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8H32" stroke="#82C3CA"></path>
+                        <path d="M26.5 1C27 3.33333 28.9 8 32.5 8" stroke="#82C3CA"></path>
+                        <path d="M26.5 15C27 12.6667 28.9 8 32.5 8" stroke="#82C3CA"></path>
+                    </svg> 
+                </button>
+            </div>
+        </div>
+        <div>
+            <div class="contact--links--desktop">
+                <a href="https://www.facebook.com/apartparkbaltichome/"><img src="images/facebook-icon.png"></a>
+                <a href="https://www.instagram.com/apart_park/"><img src="images/instagram-icon.png"></a>
+                <a href="https://www.youtube.com/watch?v=letAdh5Q2OU"><img src="images/youtube-icon.png"></a>
+            </div>
+            <div>
+                <span>2022 © Made with love by <a href="https://hotelwsieci.pl/">hotelwsieci.pl</a></span>
+            </div>
+        <nav class="navigation--mobile">
+            <a>
+                <div>
+                    <span>Kontakt</span>
+                    <img src="">
+                </div>
+            </a>
+            <a>
+                <div>
+                    <span>Rezerwuj</span>
+                    <img src="">
+                </div>
+            </a>
+            <a>
+                <div>
+                    <span>Menu</span>
+                    <img src="">
+                </div>
+            </a>
+        </nav>
     </footer>
 </body>
 
