@@ -1,0 +1,96 @@
+    /* section 3/slider */
+
+.section_slider {
+    background-color: var(--background-color--secondary);
+    color: #FFFFFF;
+    padding-bottom: 5.6rem;
+}
+
+.section-slider_line {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2.7rem;
+}
+
+.section-slider_line p {
+    text-transform: uppercase;
+    color: #B0BCD7;
+    letter-spacing: 0.2rem;
+}
+
+.section-slider_line span {
+    background-color: #B0BCD7;
+    display: block;
+    height: 0.06rem;
+    width: 7rem;
+    margin-top: 1.2rem;
+    margin-left: 0.8rem;
+}
+
+.section_slider_line h2 {
+    padding-bottom: 2.7rem;
+}
+
+.slider_paragraph {
+    color: #F1F1F1;
+    padding-bottom: 4.1rem;
+}
+
+.slideshow-container {
+    padding-top: 4.1rem;
+}
+
+[src="images/slider-image.png"] {
+    width: 100%;
+}
+
+.a-all-apartments {
+    font-weight: 700;
+    font-size: var(--font-size--base);
+    line-height: 2.4rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.slide {
+  width: 100%;
+  background-color: #172851;
+  padding-bottom: 2.4rem;
+  margin-bottom: 5.2rem;
+}
+
+.slide span {
+  font-size: var(--font-size--h1--mobile);
+  font-weight: var(--font-weight--normal);
+  color: #C4C4C4;
+}
+
+.slide p {
+  font-size: 1.2rem;
+  padding-top: 1.2rem;
+  color: #C4C4C4;
+}
+
+[href="apartament1"] {
+  font-size: var(--font-size--h1--mobile);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide h3 {
+  padding-top: var(--space--l);
+  padding-bottom: var(--space--s);
+}
+
+.apartment-information {
+  padding-left: var(--space--xxl);
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+  background-color: #172851;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}

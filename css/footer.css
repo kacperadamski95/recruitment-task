@@ -1,0 +1,191 @@
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer hr {
+    border: 0.1rem solid #495675
+}
+
+ul {
+    list-style-type: none;
+    font-size: var(--font-size--base);
+    line-height: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    /* Footer */
+    footer {
+        background-color: var(--background-color--secondary);
+        color: white;
+    }
+
+    .main-icon--mobile {
+        margin-bottom: var(--space--xxl);
+    }
+
+    .footer-adress h2 {
+        padding-bottom: 2.8rem;
+    }
+
+    .footer-adress {
+        text-align: center;
+    }
+
+    .contact--links--mobile {
+        padding-top: var(--space--xxl);
+        padding-bottom: var(--space--xxl);
+    }
+
+    [src="images/instagram-icon.png"] {
+        padding-left: var(--space--xxl);
+        padding-right: var(--space--xxl);
+    }
+
+    .ul {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1.2rem;
+        padding-bottom: 1.7rem;
+    }
+
+    .ul ul:last-child {
+        padding-left: 5.5rem; 
+    }
+
+    .form-container h2 {
+        padding-top: var(--space--xxl);
+        padding-bottom: 3.8rem;
+        text-align: center;
+    }
+
+    .form-container button {
+        height: var(--button-height--primary);
+        width: 100%;
+        color: #2C2C2C;
+        background-color: var(--button-color--background);
+        font-weight: var(--font-weight--bold);
+        font-size: var(--font-size--base);
+        line-height: 2.4rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        border-style: none;
+    }
+
+    [type="submit"] {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-adress {
+        padding-top: var(--space--xxl);
+        padding-bottom: var(--space--xxl);
+        color: #9F9F9F;
+        font-size: var(--font-size--h1--mobile);
+    }
+    
+    .navigation--mobile {
+        height: 9vh;
+        background-color: #FFFFFF;
+        font-size: var(--font-size--h1--mobile);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+
+    .navigation--mobile a {
+        color: #646464;
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation--mobile img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .navigation--mobile span {
+        color: #646464;
+    }
+
+    .menu-hidden {
+        width: 0.1rem;
+        height: 0.1rem;
+        opacity: 0;
+        overflow: hidden;
+        transition-property: opacity, left, top, height;
+        transition-duration: 3s, 3s, 3s, 3s;
+    }
+
+    .menu-active {
+        width: 82vw;
+        height: 91vh;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 5.9rem;
+        padding-left: 4rem;
+        padding-bottom: 4rem;
+        background-color: #FFFFFF;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        position: fixed;  
+        overflow: hidden;
+    }
+
+    .language_icons img {
+        height: 5rem;
+        width: auto;
+    }
+
+    .icons-social img{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .language_icons {
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-hidden_links {
+        width: 65%;
+        color: var(--background-color--secondary);
+        font-size: 1.8rem;
+        line-height: 5rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.3rem;
+        padding-bottom: var(--space--xl);
+    }
+
+    .icons-social {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        padding-bottom: 9vh;
+    }
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 768px) {
+
+}
