@@ -10,50 +10,66 @@ html {
     margin: 0;
 }
 
+body {
+    font-family:'Poppins';
+}
+
+h1 {
+    color: var(--font-color--light-white);
+    font-weight: var(--font-weight--norma);
+    letter-spacing: 0.2rem;
+    font-family: 'Poppins';
+}
+
+h2 {
+    font-weight: var(--font-weight--normal);
+    font-family: 'Oranienbaum';
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight--normal);
+    font-family: 'Oranienbaum';
+}
+
+h4 {
+    font-family: 'Poppins';
+    font-weight: var(--font-weight--normal);
+}
+
+p {
+    font-size: var(--font-size--base);
+    font-weight: var(--font-weight--normal);
+    font-family: 'Poppins';
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
+    header,
+    .contact--links--desktop,
+    .desktop-hr {
+        display: none;
+    }
+
     h1 {
         font-size: var(--font-size--h1--mobile);
-        color: var(--font-color-secondary);
-        font-weight: var(--font-weight--normal);
-        letter-spacing: 0.2rem;
     }
 
     h2 {
         font-size: var(--font-size-h2--mobile);
-        font-weight: var(--font-weight--normal);
-        font-family: 'Oranienbaum';
-    }
-
-    h3 {
-        font-size: var(--font-size-h3--mobile);
-        font-weight: var(--font-weight--normal);
-        font-family: 'Oranienbaum';
-    }
-
-    h4 {
-
-        font-weight: var(--font-weight--normal);
-    }
-
-    p {
-        font-size: var(--font-size--base);
-        font-weight: var(--font-weight--normal);
     }
 
     hr {
-        background-color: var(--font-color_horizontal-lines);
+        background-color: var(--background-color-hr--mobile);
+        opacity: 1;
+        margin: 0;
     }
 
     a {
         color: var(--font-color-a)
     }
 
-    header,
-    .contact--links--desktop {
-        display: none;
-    }
 
     section {
         padding-left: var(--space--xxl);
@@ -86,132 +102,7 @@ html {
         padding-top: 1.6rem;
         color: #C4C4C4;
     }
-
-
-    /* section 1 */
-    .section--hero {
-        background: linear-gradient(180deg, rgba(11, 28, 68, 0) 0%, rgba(11, 28, 68, 0.8) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), url(../images/first-background-mobile.jpeg), #000000;
-        min-height: 90rem;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-        text-align: center;
-        color: white;
-    }
-
-    .section--hero h1 {
-        padding-top: 10rem;
-        padding-bottom: var(--space--xl);
-        text-transform: uppercase;
-    }
-
-    .section--hero h4:nth-of-type(1) {
-        font-size: 4.8rem;
-        font-family: 'Oranienbaum';
-    }
-
-    .section--hero h4:nth-of-type(2) {
-        padding-top: 13.8rem;
-        font-size: var(--font-size--base);
-        line-height: 2.4rem;
-        text-transform: uppercase;
-    }
-
-    /* section 2 */
-    .section-discover {
-        background: var(--background-color--gradient);
-    }
-
-    .section-discover p {
-        color: #646464;
-        font-style: normal;
-        line-height: 3rem;
-    }
-
-    .section-discover h3 {
-        font-style: normal;
-        font-size: var(--font-size-h3--mobile);
-        line-height: 2.8rem;
-        padding-top: 1.2rem;
-        padding-bottom: 2.3rem;
-    }
-
-    .section-discover h2 {
-        padding-bottom: 2.2rem;
-    }
-
-    .section-discover_line p {
-        font-size: 1.4rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-    }
-
-    .section-discover_line {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 2.7rem;
-    }
-
-    .section-discover_line span {
-        background-color: #9f9f9f;
-        display: block;
-        height: 0.06rem;
-        width: 8.9rem;
-        margin-top: 1.5rem;
-        margin-left: 1rem;
-    }
-
-    .section-discover-about-us {
-        padding-top: 2.7rem;
-        padding-bottom: 3.9rem;
-        padding-left: 6rem;
-    }
-
-    .section-discover-about-us a {
-        font-size: var(--font-size--base);
-        font-weight: var(--font-weight--bold);
-        line-height: 2.4rem;
-        letter-spacing: 0.2em;
-        padding-right: 2rem;
-        text-transform: uppercase;
-    }
-
-    [src="images/section-first-image.png"] {
-        width: 29.4rem;
-        height: 27rem;
-        margin-left: 6rem;
-    }
-
-    [src="images/section-second-image.png"] {
-        width: 23rem;
-        height: 17.2rem;
-    }
-
-    [src="images/section-third-image.png"] {
-        width: 10.8rem;
-        height: 14.4rem; 
-    }
-
-    .overlapping--images {
-        padding-bottom: 5.5rem;
-    }
-
-    .section-discover-containers {
-        display: flex; 
-        flex-direction: row;
-        padding-bottom: 5.5rem;
-        padding-top: 3.8rem;
-    }
-
-    .section-discover-containers span {
-    font-family: 'Oranienbaum';
-    font-size: 4.8rem;
-    line-height: 5.5rem;
-    color: var(--font-color_horizontal-lines);
-    padding-right: 2.7rem;
-    }
-
+    
     /* input */
     input {
         width: 100%;
@@ -227,12 +118,29 @@ html {
 
 
 /* Desktop and tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     .navigation--mobile,
     .contact--links--mobile,
     .main-icon--mobile,
     .menu-hidden {
         display: none;
+    }
+
+    h1 {
+        font-size: var(--font-size--h1--desktop);
+        font-family: 'Poppins';
+    }
+
+    h2 {
+        font-size: var(--font-size-h2--desktop);
+    }
+
+    hr {
+        background-color: var(--background-color-hr--desktop);
+    }
+
+    a {
+        font-size: var(--font-size--base);
     }
 
     input {
@@ -242,4 +150,29 @@ html {
     textarea {
         width: var(--textarea-width--desktop);
     }
+
+    section:not(.section--hero, .section-discover) {
+        padding-top: 10rem;
+    }
+    header,
+    .section--hero {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 9.5rem;
+    }
+
+    .section-discover {
+        padding-top: 90rem;
+    }
+
+    .footer-section,
+    .section-discover {
+        padding-left: 31rem;
+        padding-right: 31rem;
+    }
+
+    [src="images/LOFO.png"] {
+        height: 9rem;
+    }
+
 }

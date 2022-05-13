@@ -1,0 +1,282 @@
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Poppins', sans-serif;
+}
+.section--hero h1 {
+    text-transform: uppercase;
+}
+
+.section--hero h4:nth-of-type(1) {
+    font-family: 'Oranienbaum';
+}
+
+.section--hero h4:nth-of-type(2) {
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    font-size: var(--font-size--base);
+}
+
+.section-discover-about-us a {
+    font-size: var(--font-size--base);
+    font-weight: var(--font-weight--bold);
+    line-height: 2.4rem;
+    letter-spacing: 0.2em;
+    padding-right: 2rem;
+    text-transform: uppercase;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+    /* section 1 */
+    .section--hero {
+        background: linear-gradient(180deg, rgba(11, 28, 68, 0) 0%, rgba(11, 28, 68, 0.8) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), url(../images/first-background-mobile.jpeg), #000000;
+        min-height: 90rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        text-align: center;
+        color: white;
+    }
+
+    .section--hero h1 {
+        padding-top: 10rem;
+        padding-bottom: var(--space--xl);
+    }
+
+    .section--hero h4:nth-of-type(1) {
+        font-size: 4.8rem;
+    }
+
+    .section--hero h4:nth-of-type(2) {
+        padding-top: 13.8rem;
+    }
+
+    /* section 2 */
+    .section-discover {
+        background: var(--background-color--gradient);
+    }
+
+    .section-discover p {
+        color: #646464;
+        font-style: normal;
+        line-height: 3rem;
+    }
+
+    .section-discover h3 {
+        font-style: normal;
+        line-height: 2.8rem;
+        padding-top: 1.2rem;
+        padding-bottom: 2.3rem;
+    }
+
+    .section-discover h2 {
+        padding-bottom: 2.2rem;
+    }
+
+    .section-discover_line p {
+        font-size: 1.4rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+    .section-discover_line {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 2.7rem;
+    }
+
+    .section-discover_line span {
+        background-color: #9f9f9f;
+        display: block;
+        height: 0.06rem;
+        width: 8.9rem;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .section-discover-about-us {
+        padding-top: 2.7rem;
+        padding-bottom: 3.9rem;
+        padding-left: 17%;
+    }
+
+
+    [src="images/section-first-image.png"] {
+        width: 83%;
+        height: auto;
+        margin-left: 17%;
+    }
+
+    [src="images/section-second-image.png"] {
+        width: 65%;
+        height: auto;
+    }
+
+    [src="images/section-third-image.png"] {
+        width: 31%;
+        height: auto; 
+    }
+
+    .overlapping--images {
+        padding-bottom: 5.5rem;
+    }
+
+    .section-discover-containers {
+        display: flex; 
+        flex-direction: row;
+        padding-bottom: 5.5rem;
+        padding-top: 3.8rem;
+    }
+
+    .section-discover-containers span {
+    font-family: 'Oranienbaum';
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+    color: var(--background-color-hr--mobile);
+    padding-right: 2.7rem;
+    }
+
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+
+    /* section1 */
+    /* .desktop-hr {
+        background-color: var(--button-color--background);
+        border: 0.1rem solid #495675
+    } */
+
+    .section--hero {
+        background-image: url(../images/first-background-desktop.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        min-height: 90rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .section--hero h1 {
+        font-size: 1.8rem;
+        padding-top: 32rem;
+        padding-bottom: 4.5rem;
+        text-align: center;
+    }
+
+    .section--hero h4:nth-of-type(1) {
+        font-size: 7.2rem;
+        color: var(--button-color--background);
+        text-align: center;
+    }
+
+    .section--hero h4:nth-of-type(2) {
+        padding-top: 16.8rem;
+        color: var(--button-color--background);
+        text-align: center;
+        padding-bottom: 17.4rem;
+    }
+
+    /* section2 */
+    [src="images/section-first-image.png"] {
+        width: 53.1rem;
+        height: auto;
+        top: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    [src="images/section-second-image.png"] {
+        width: 41.7rem;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 2;
+    }
+
+    [src="images/section-third-image.png"] {
+        width: 13.7rem;
+        height: auto; 
+        bottom: 0;
+        position: absolute;
+        margin-left: 21.5vw;
+        margin-bottom: 4.5rem;
+    }
+
+    .contact--links--desktop img {
+        height: 4rem;
+        width: auto;
+        padding-right: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .discover-apartpark {
+        width: 35%
+    }
+    .discover-apartpark p {
+        line-height: 24px;
+        padding-bottom: 3.2rem;
+    }
+
+    .section-discover_line h2 {
+        padding-top: 4.3rem;
+        padding-bottom: 4.2rem;
+    }
+
+    .overlapping--images {
+        width: 75rem;
+        height: 66.8rem;
+        /* margin-left: 20.5vw;  */
+        /* margin-left: 21vw; */
+        position: relative;
+    }
+
+    .section-discover--idk {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10rem;
+    }
+
+    .discover-container hr {
+        display: none;
+    }
+
+    .discover-container {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 9.5rem;
+        width: 100%;
+    }
+
+    .section-discover-containers {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        border-top: 0.1rem solid #DDEAEA;
+    }
+
+    .section-discover-containers:nth-of-type(2) {
+        margin-top: 8.6rem;
+    }
+
+    .section-discover-containers span {
+        font-family: 'Oranienbaum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 55px;
+        color: #DDEAEA;
+
+    }
+
+}

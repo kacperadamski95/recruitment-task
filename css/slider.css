@@ -1,5 +1,11 @@
-    /* section 3/slider */
+/* 62.5% 1rem=10px */
+html {
+  font-size: 62.5%;
+  font-family: 'Oranienbaum', serif;
+  font-family: 'Poppins', sans-serif;
+}
 
+/* section 3/slider */
 .section_slider {
     background-color: var(--background-color--secondary);
     color: #FFFFFF;

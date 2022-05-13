@@ -2,19 +2,19 @@
     --background-color--main: #E5E5E5;
     --background-color--secondary: #0B1C44;
     --background-color--gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(190, 231, 236, 0.5) 100%);
+    --background-color-hr--desktop: #495675;
+    --background-color-hr--mobile: #DDEAEA;
     --font-color--black: #000000;
     --font-color--light-white: #E5E5E5;
-    --font-color_horizontal-lines: #DDEAEA;
     --font-color-a: #82C3CA;
     --logos-color--background: #82C3CA;
     --button-color--background: #FFFFFF;
     --font-size--base: 1.6rem;
     --font-size--h1--mobile: 1.4rem;
     --font-size-h2--mobile: 3.6rem;
-    --font-size-h3--mobile: 2.4rem;
+    --font-size-h3: 2.4rem;
     --font-size-h1--desktop: 1.8rem;
     --font-size-h2--desktop: 6.4rem;
-    --font-size-h3--desktop: 2.4rem;
     --font-size--base: 1.6rem;
     --font-weight--bold: 700;
     --font-weight--normal: 400;
@@ -31,4 +31,5 @@
     --space--l: 2rem;
     --space--xl: 2.5rem;
     --space--xxl: 3rem;
+
 }

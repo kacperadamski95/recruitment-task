@@ -1,0 +1,84 @@
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: 'Oranienbaum', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .navigation--desktop {
+        background-color: var(--background-color--transparent);
+        min-height: 14rem;
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+        border-bottom: 0.1rem solid #FFFFFF;
+    }
+
+    
+    header a {
+        color: var(--button-color--background);
+        font-weight: var(--font-weight--bold);
+        text-decoration: none;
+    }
+    
+    [src="images/LOFO.png"] {
+        height: 6rem;
+        width: auto;
+    }
+
+    .header--links {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    .hehe {
+        display: flex;
+        justify-content: flex-end;
+        align-items:flex-end;
+        padding-top: 1.8rem;
+    }
+
+    .header__buttons {
+        /* width: 45%; */
+        display: inline;
+        justify-content: space-between;
+    }
+
+    [name="lang"] {
+        background-color: var(--background-color--transparent);
+        text-align: center;
+        border-style: none;
+        color: #B0BCD7;
+        margin-bottom: 1.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .header__buttons p {
+        font-size: 1.2rem;
+        color: #E5E5E5;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .huhu button {
+        height: 5rem;
+        width: 24rem;
+        text-transform: uppercase;
+        background-color: #FFFFFF;
+        color: #2C2C2C;
+        font-size: var(--font-size--base);
+        border-style: none;
+    }
+
+    .huhu {
+        padding-left: 1rem;
+    }
+}
