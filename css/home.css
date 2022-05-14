@@ -1,9 +1,3 @@
-/* 62.5% 1rem=10px */
-html {
-    font-size: 62.5%;
-    font-family: 'Oranienbaum', serif;
-    font-family: 'Poppins', sans-serif;
-}
 .section--hero h1 {
     text-transform: uppercase;
 }
@@ -21,10 +15,41 @@ html {
 .section-discover-about-us a {
     font-size: var(--font-size--base);
     font-weight: var(--font-weight--bold);
+    color: var(--font-color-a);
     line-height: 2.4rem;
     letter-spacing: 0.2em;
     padding-right: 2rem;
     text-transform: uppercase;
+}
+
+.section-discover {
+    background: var(--background-color--gradient);
+}
+
+.section-discover p {
+    color: #646464;
+    font-style: normal;
+    line-height: 3rem;
+}
+
+.section-discover h3 {
+    font-style: normal;
+    line-height: 2.8rem;
+    font-family: 'Oranienbaum';
+    color: #000000;
+}
+
+.section-discover_line {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2.7rem;
+}
+
+.section-discover_line span {
+    background-color: #9f9f9f;
+    display: block;
+    height: 0.06rem;
+    width: 8.9rem;
 }
 
 
@@ -57,9 +82,6 @@ html {
     }
 
     /* section 2 */
-    .section-discover {
-        background: var(--background-color--gradient);
-    }
 
     .section-discover p {
         color: #646464;
@@ -68,8 +90,6 @@ html {
     }
 
     .section-discover h3 {
-        font-style: normal;
-        line-height: 2.8rem;
         padding-top: 1.2rem;
         padding-bottom: 2.3rem;
     }
@@ -85,16 +105,10 @@ html {
     }
 
     .section-discover_line {
-        display: flex;
-        flex-direction: row;
         padding-bottom: 2.7rem;
     }
 
     .section-discover_line span {
-        background-color: #9f9f9f;
-        display: block;
-        height: 0.06rem;
-        width: 8.9rem;
         margin-top: 1.5rem;
         margin-left: 1rem;
     }
@@ -145,13 +159,6 @@ html {
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
-
-    /* section1 */
-    /* .desktop-hr {
-        background-color: var(--button-color--background);
-        border: 0.1rem solid #495675
-    } */
-
     .section--hero {
         background-image: url(../images/first-background-desktop.jpeg);
         background-repeat: no-repeat;
@@ -217,21 +224,26 @@ html {
         height: 4rem;
         width: auto;
         padding-right: 1rem;
-        margin-bottom: 4rem;
     }
 
     .discover-apartpark {
         width: 35%
     }
+
+    .section-discover_line span {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
     .discover-apartpark p {
         line-height: 24px;
         padding-bottom: 3.2rem;
     }
 
-    .section-discover_line h2 {
-        padding-top: 4.3rem;
-        padding-bottom: 4.2rem;
+    .section-discover h2 {
+        width: 33%;
     }
+
 
     .overlapping--images {
         width: 75rem;
@@ -241,7 +253,7 @@ html {
         position: relative;
     }
 
-    .section-discover--idk {
+    .section-discover-flex {
         display: flex;
         justify-content: space-between;
         padding-bottom: 10rem;
@@ -263,6 +275,7 @@ html {
         display: flex;
         flex-direction: row;
         border-top: 0.1rem solid #DDEAEA;
+        padding-top: 2.8rem;
     }
 
     .section-discover-containers:nth-of-type(2) {
@@ -276,7 +289,11 @@ html {
         font-size: 48px;
         line-height: 55px;
         color: #DDEAEA;
+        padding-right: 1rem;
+    }
 
+    .section-discover-containers div {
+        padding-top: 1rem;
     }
 
 }

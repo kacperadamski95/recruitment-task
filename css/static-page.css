@@ -1,0 +1,62 @@
+.headings {
+    background-color: var(--background-color--gradient);
+    }
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .second-heading,
+    .third-heading,
+    strong {
+        display: none
+    }
+
+    .static-page {
+        background-color: var(--background-color--secondary);
+        /* height: 27rem; */
+        text-align: center;
+    }
+
+    .static-page h1 {
+        font-family: 'Oranienbaum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+        color: #FFFFFF;
+        padding-top: 4.1rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .static-page p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #E5E5E5;
+        padding-bottom: 3.1rem;
+    }
+
+}    
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .static-page img {
+        display: none;
+    }
+
+    .static-page {
+        background-color: var(--background-color--secondary);
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        min-height: 41rem;
+        text-align: center;
+    }
+
+    .static-page h1 {
+        padding-top: 23rem;
+    }
+
+}

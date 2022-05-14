@@ -1,9 +1,3 @@
-/* 62.5% 1rem=10px */
-html {
-    font-size: 62.5%;
-    font-family: 'Oranienbaum', serif;
-    font-family: 'Poppins', sans-serif;
-}
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
@@ -16,7 +10,7 @@ html {
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 4rem;
-        border-bottom: 0.1rem solid #FFFFFF;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
     }
 
     
@@ -39,7 +33,7 @@ html {
         padding-top: 4rem;
     }
 
-    .hehe {
+    .header--flex {
         display: flex;
         justify-content: flex-end;
         align-items:flex-end;
@@ -68,7 +62,7 @@ html {
         text-align: center;
     }
 
-    .huhu button {
+    .reservation button {
         height: 5rem;
         width: 24rem;
         text-transform: uppercase;
@@ -78,7 +72,7 @@ html {
         border-style: none;
     }
 
-    .huhu {
+    .reservation {
         padding-left: 1rem;
     }
 }

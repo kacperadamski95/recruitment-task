@@ -1,15 +1,8 @@
-/* 62.5% 1rem=10px */
-html {
-  font-size: 62.5%;
-  font-family: 'Oranienbaum', serif;
-  font-family: 'Poppins', sans-serif;
-}
 
 /* section 3/slider */
 .section_slider {
     background-color: var(--background-color--secondary);
     color: #FFFFFF;
-    padding-bottom: 5.6rem;
 }
 
 .section-slider_line {
@@ -46,23 +39,13 @@ html {
     padding-top: 4.1rem;
 }
 
-[src="images/slider-image.png"] {
-    width: 100%;
-}
-
 .a-all-apartments {
     font-weight: 700;
     font-size: var(--font-size--base);
     line-height: 2.4rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-}
-
-.slide {
-  width: 100%;
-  background-color: #172851;
-  padding-bottom: 2.4rem;
-  margin-bottom: 5.2rem;
+    color: var(--font-color-a);
 }
 
 .slide span {
@@ -99,4 +82,58 @@ html {
 
 .carousel-indicators {
   margin-bottom: 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .section_slider {
+    padding-bottom: 5.6rem;
+  }
+
+  [src="images/slider-image.png"] {
+    width: 100%;
+  }
+
+  [src="images/slider-desktop.png"] {
+    display: none;
+  }
+
+  .slide {
+    width: 100%;
+    background-color: #172851;
+    padding-bottom: 2.4rem;
+    margin-bottom: 5.2rem;
+  }
+}  
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+  .section_slider {
+    width: 100vw;
+    padding-top: 10rem;
+    padding-bottom: 9.6rem;
+    padding-left: 31rem;
+  }
+
+  [src="images/slider-image.png"] {
+    display: none
+  }
+
+  [src="images/slider-desktop.png"] {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide {
+    width: 57%;
+    background-color: #172851;
+    padding-bottom: 2.4rem;
+    margin-bottom: 5.2rem;
+    justify-content: center;
+    /* margin-left: 10vw; */
+  }
+
+  .slider_paragraph {
+    width: 40%;
+  }
 }

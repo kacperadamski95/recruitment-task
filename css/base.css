@@ -43,12 +43,35 @@ p {
     font-family: 'Poppins';
 }
 
+input {
+    height: var(--input-height);
+    font-size: var(--font-size--base);
+    border: 0.1rem solid #495675;
+    padding-left: 2.2rem;
+    color: #C4C4C4;
+}
+
+textarea {
+    height: var(--textarea-height);
+    font-size: var(--font-size--base);
+    border: 0.1rem solid #495675;
+    padding-left: 2.2rem;
+    padding-top: 1.6rem;
+    color: #C4C4C4;
+}    
+
+ul {
+    color:#E5E5E5;  
+    font-size: var(--font-size--base);
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
     header,
     .contact--links--desktop,
-    .desktop-hr {
+    .desktop-hr,
+    .cookies-information {
         display: none;
     }
 
@@ -86,22 +109,6 @@ p {
         height: 9rem;
     }
 
-    input {
-        height: var(--input-height);
-        font-size: var(--font-size--base);
-        border: 0.1rem solid #495675;
-        padding-left: 2.2rem;
-        color: #C4C4C4;
-    }
-
-    textarea {
-        height: var(--textarea-height);
-        font-size: var(--font-size--base);
-        border: 0.1rem solid #495675;
-        padding-left: 2.2rem;
-        padding-top: 1.6rem;
-        color: #C4C4C4;
-    }
     
     /* input */
     input {
@@ -109,11 +116,14 @@ p {
         background-color: var(--background-color--secondary);
     }
 
-    textarea {
-        width: 100%;
-        background-color: var(--background-color--secondary);
+    [placeholder="Imię i nazwisko"] {
+        text-align: left;
     }
-
+    
+    textarea {
+        background-color: var(--background-color--secondary);
+        width: 100%;
+    }
 }
 
 
@@ -122,7 +132,8 @@ p {
     .navigation--mobile,
     .contact--links--mobile,
     .main-icon--mobile,
-    .menu-hidden {
+    .menu-hidden,
+    .footer--desktop-row hr {
         display: none;
     }
 
@@ -141,28 +152,29 @@ p {
 
     a {
         font-size: var(--font-size--base);
+        color: var(--font-color-a);
     }
 
     input {
         width: var(--input-width--desktop);
+        background-color: transparent;
     }
 
     textarea {
         width: var(--textarea-width--desktop);
+        background-color: transparent;
     }
 
-    section:not(.section--hero, .section-discover) {
-        padding-top: 10rem;
-    }
     header,
     .section--hero {
         padding-left: 4rem;
         padding-right: 4rem;
-        padding-bottom: 9.5rem;
+        padding-bottom: 4.5rem;
     }
 
     .section-discover {
         padding-top: 90rem;
+        width: 100vw;
     }
 
     .footer-section,
@@ -175,4 +187,7 @@ p {
         height: 9rem;
     }
 
+    footer {
+        padding: 6rem;
+    }
 }

@@ -70,7 +70,7 @@
                 <a href="#static-page">Kontakt</a>
             </div>
             <div class="header__buttons">
-                <div class="hehe">
+                <div class="header--flex">
                     <div id="foo">
                         <input type="text" name="start" placeholder="Od">
                         <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
                             </svg>                            
                         <input type="text" name="end" placeholder="Do">  
                     </div>
-                        <div class="huhu">
+                        <div class="reservation">
                             <p>gwarancja najniższych cen!</p>
                             <button>rezerwuj online</button>
                         </div>
@@ -113,61 +113,74 @@
                 </div>
             </div>
             <hr>
-            <div class="ul">
-                <ul>
-                    <li>Poznaj Apartpark</li>
-                    <li>Znajdź apartament</li>
-                    <li>Zarezerwuj pobyt</li>
-                    <li>Sofa Bistro</li>
-                    <li>Sofa Cafe</li>
-                </ul>
-                <ul>
-                    <li>Atrakcje</li>
-                    <li>Współpraca</li>
-                    <li>Blog</li>
-                    <li>Kontakt</li>
-                </ul>
-            </div>
-            <div>
+            <div class="footer--desktop-row">
+                <div class="ul">
+                    <ul>
+                        <li>Poznaj Apartpark</li>
+                        <li>Znajdź apartament</li>
+                        <li>Zarezerwuj pobyt</li>
+                        <li>Sofa Bistro</li>
+                        <li>Sofa Cafe</li>
+                    </ul>
+                    <ul>
+                        <li>Atrakcje</li>
+                        <li>Współpraca</li>
+                        <li>Blog</li>
+                        <li>Kontakt</li>
+                    </ul>
+                </div>
                 <div>
-                    <hr>
-                </div>
-                <div class="form-container">
-                    <h2>Czekamy na Ciebie</h2>
-                    <form id="sign-up-form" class="form">
-                        <label hidden for="fullname">Imię i nazwisko</label>
-                        <input id="fullname" name="fullname" type="text" minlength="1" maxlength="100"
-                            placeholder="Imię i nazwisko" required>
-                        <label hidden for="e-mail">E-mail lub nr telefonu</label>
-                        <input id="e-mail" name="E-mail" type="text" minlength="1" maxlength="100"
-                            placeholder="Adres E-mail lub nr telefonu" required>
-                        <textarea id="message" name="Message" minlength="1" maxlength="500" rows="5" cols="22"
-                            placeholder="Wiadomość" required></textarea>
-                    </form>
-                    <button type="submit">Wyślij wiadomość
-                        <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 8H32" stroke="#2C2C2C"></path>
-                            <path d="M26.5 1C27 3.33333 28.9 8 32.5 8" stroke="#2C2C2C"></path>
-                            <path d="M26.5 15C27 12.6667 28.9 8 32.5 8" stroke="#2C2C2C"></path>
-                            </svg>
-                    </button>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="form-container">
+                        <form id="sign-up-form" class="form">
+                            <h2>Czekamy na Ciebie</h2>
+                            <label hidden for="fullname">Imię i nazwisko</label>
+                            <input id="fullname" name="fullname" type="text" minlength="1" maxlength="100"
+                                placeholder="Imię i nazwisko" required>
+                            <label hidden for="e-mail">E-mail lub nr telefonu</label>
+                            <input id="e-mail" name="E-mail" type="text" minlength="1" maxlength="100"
+                                placeholder="Adres E-mail lub nr telefonu" required>
+                            <textarea id="message" name="Message" minlength="1" maxlength="500" rows="5" cols="22"
+                                placeholder="Wiadomość" required></textarea>
+                        <button type="submit">Wyślij wiadomość
+                            <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 8H32" stroke="#2C2C2C"></path>
+                                <path d="M26.5 1C27 3.33333 28.9 8 32.5 8" stroke="#2C2C2C"></path>
+                                <path d="M26.5 15C27 12.6667 28.9 8 32.5 8" stroke="#2C2C2C"></path>
+                                </svg>
+                        </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="contact--links--desktop">
-                    <a href="https://www.facebook.com/apartparkbaltichome/" target="_blank"><img
-                            src="images/facebook-icon.png"></a>
-                    <a href="https://www.instagram.com/apart_park/" target="_blank"><img
-                            src="images/instagram-icon.png"></a>
-                    <a href="https://www.youtube.com/watch?v=letAdh5Q2OU" target="_blank"><img
-                            src="images/youtube-icon.png"></a>
-                </div>
-                <div class="footer-adress">
-                    <span>2022 © Made with love by</span>
-                    <adress><a href="https://hotelwsieci.pl/">hotelwsieci.pl</a>
-                    </adress>
+                <div class="social-adress">
+                    <div class="contact--links--desktop">
+                        <a href="https://www.facebook.com/apartparkbaltichome/" target="_blank"><img
+                                src="images/facebook-desktop.png"></a>
+                        <a href="https://www.instagram.com/apart_park/" target="_blank"><img
+                                src="images/instagram-desktop.png"></a>
+                        <a href="https://www.youtube.com/watch?v=letAdh5Q2OU" target="_blank"><img
+                                src="images/youtube-desktop.png"></a>
+                    </div>
+                    <div class="footer-adress">
+                        <span>2022 © Made with love by</span>
+                        <adress><a href="https://hotelwsieci.pl/">hotelwsieci.pl</a>
+                        </adress>
+                    </div>
                 </div>
             </section>
+            <div class="cookies-information">
+                <span>Ta strona używa plików cookies. 
+                Aby dowiedzieć się więcej zobacz naszą Politykę Prywatności.
+                </span>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="13.4351" y1="0.707107" x2="0.707211" y2="13.435" stroke="#C4C4C4" stroke-width="2"/>
+                    <line x1="13.435" y1="13.4351" x2="0.707062" y2="0.707211" stroke="#C4C4C4" stroke-width="2"/>
+                    </svg>
+                    
+            </div>
             <div class="menu-hidden">
                 <div class="language_icons">
                     <img src="images/PL.png">
