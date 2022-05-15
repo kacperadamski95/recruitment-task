@@ -26,7 +26,7 @@ ul {
     height: var(--button-height--primary);
     width: 41.9rem;
     color: #2C2C2C;
-    background-color: var(--button-color--background);
+    background-color: var(--color--white);
     font-weight: var(--font-weight--bold);
     font-size: var(--font-size--base);
     line-height: 2.4rem;
@@ -35,12 +35,23 @@ ul {
     border-style: none;
 }
 
+footer {
+    color: var(--color--white);
+}
+
+footer p {
+    color: #E5E5E5
+}
+
+.footer-adress {
+    text-align: center;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
     /* Footer */
     footer {
         background-color: var(--background-color--secondary);
-        color: white;
     }
 
     .main-icon--mobile {
@@ -49,10 +60,7 @@ ul {
 
     .footer-adress h2 {
         padding-bottom: 2.8rem;
-    }
-
-    .footer-adress {
-        text-align: center;
+        color: var(--color--white)
     }
 
     .contact--links--mobile {
@@ -96,7 +104,7 @@ ul {
     
     .navigation--mobile {
         height: 9vh;
-        background-color: #FFFFFF;
+        background-color: var(--color--white);
         font-size: var(--font-size--h1--mobile);
         width: 100%;
         display: flex;
@@ -127,8 +135,8 @@ ul {
         height: 0.1rem;
         opacity: 0;
         overflow: hidden;
-        transition-property: opacity, left, top, height;
-        transition-duration: 1s, 1s, 1s, 1s;
+        transition-property: opacity, width;
+        transition-duration: 0.5s;
     }
 
     .menu-active {
@@ -141,7 +149,7 @@ ul {
         padding-top: 5.9rem;
         padding-left: 4rem;
         padding-bottom: 4rem;
-        background-color: #FFFFFF;
+        background-color: var(--color--white);
         right: 0;
         top: 0;
         z-index: 1;
@@ -169,7 +177,7 @@ ul {
     .menu-hidden_links {
         width: 65%;
         color: var(--background-color--secondary);
-        font-size: 1.8rem;
+        font-size: var(--font-size-h1--desktop);
         line-height: 5rem;
         display: flex;
         flex-direction: column;
@@ -198,11 +206,6 @@ ul {
         background-size: cover;
         width: 100vw;
         min-height: 89.2rem;
-        color: #FFFFFF;
-    }
-
-    .footer-adress {
-        text-align: center;
     }
 
     .footer-adress p {
@@ -228,8 +231,8 @@ ul {
     }
 
     .form-container h2 {
-        font-size: 2.4rem;
-        padding-top: 1rem;
+        font-size: var(--font-size-h3);
+        padding-top: var(--space--s);
         padding-bottom: 2.1rem;
     }
 
@@ -242,7 +245,7 @@ ul {
     }
 
     .ul ul:first-of-type {
-        margin-right: 13vw;
+        margin-right: 16vw;
     }
 
     footer hr {
@@ -257,7 +260,7 @@ ul {
     }
 
     .cookies-information {
-        background-color: #000000;
+        background-color: var(--font-color--black);
         color: #C4C4C4;
         text-align: center;
         width: 100vw;
@@ -273,12 +276,12 @@ ul {
         display: flex;
         justify-content: space-between;
         padding-top: 2.9rem;
-        padding-bottom: 3rem;
+        padding-bottom: var(--space--xxl);
         border-top: 0.1rem solid #495675;
     }
 
     .cookies-information span {
-        padding-right: 1rem;
+        padding-right: var(--space--s);
         color: #9F9F9F;
         font-size: var(--font-size--h1--mobile);
     }

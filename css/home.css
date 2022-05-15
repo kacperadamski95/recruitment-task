@@ -1,3 +1,4 @@
+
 .section--hero h1 {
     text-transform: uppercase;
 }
@@ -18,7 +19,7 @@
     color: var(--font-color-a);
     line-height: 2.4rem;
     letter-spacing: 0.2em;
-    padding-right: 2rem;
+    padding-right: var(--space--l);
     text-transform: uppercase;
 }
 
@@ -52,6 +53,19 @@
     width: 8.9rem;
 }
 
+.section-discover-containers {
+    display: flex;
+    flex-direction: row;
+}    
+
+.section-discover-containers span {
+    font-family: 'Oranienbaum';
+    font-weight: var(--font-weight--normal);
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+    color: var(--background-color-hr--mobile);
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
@@ -59,13 +73,13 @@
     /* section 1 */
     .section--hero {
         background: linear-gradient(180deg, rgba(11, 28, 68, 0) 0%, rgba(11, 28, 68, 0.8) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), url(../images/first-background-mobile.jpeg), #000000;
-        min-height: 90rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 100vw;
+        min-height: 90rem;
         text-align: center;
-        color: white;
+        color: var(--color--white);
     }
 
     .section--hero h1 {
@@ -99,7 +113,7 @@
     }
 
     .section-discover_line p {
-        font-size: 1.4rem;
+        font-size: var(--font-size--h1--mobile);
         letter-spacing: 0.2em;
         text-transform: uppercase;
     }
@@ -109,8 +123,8 @@
     }
 
     .section-discover_line span {
-        margin-top: 1.5rem;
-        margin-left: 1rem;
+        margin-top:  var(--space--m);
+        margin-left: var(--space--s);
     }
 
     .section-discover-about-us {
@@ -141,17 +155,11 @@
     }
 
     .section-discover-containers {
-        display: flex; 
-        flex-direction: row;
         padding-bottom: 5.5rem;
         padding-top: 3.8rem;
     }
 
     .section-discover-containers span {
-    font-family: 'Oranienbaum';
-    font-size: 4.8rem;
-    line-height: 5.5rem;
-    color: var(--background-color-hr--mobile);
     padding-right: 2.7rem;
     }
 
@@ -173,7 +181,7 @@
     }
 
     .section--hero h1 {
-        font-size: 1.8rem;
+        font-size: var(--font-size-h1--desktop);
         padding-top: 32rem;
         padding-bottom: 4.5rem;
         text-align: center;
@@ -181,13 +189,13 @@
 
     .section--hero h4:nth-of-type(1) {
         font-size: 7.2rem;
-        color: var(--button-color--background);
+        color: var(--color--white);
         text-align: center;
     }
 
     .section--hero h4:nth-of-type(2) {
         padding-top: 16.8rem;
-        color: var(--button-color--background);
+        color: var(--color--white);
         text-align: center;
         padding-bottom: 17.4rem;
     }
@@ -216,14 +224,14 @@
         height: auto; 
         bottom: 0;
         position: absolute;
-        margin-left: 21.5vw;
+        margin-left: 19vw;
         margin-bottom: 4.5rem;
     }
 
     .contact--links--desktop img {
         height: 4rem;
         width: auto;
-        padding-right: 1rem;
+        padding-right: var(--space--s);
     }
 
     .discover-apartpark {
@@ -231,8 +239,8 @@
     }
 
     .section-discover_line span {
-        margin-top: 1rem;
-        margin-left: 1rem;
+        margin-top: var(--space--s);
+        margin-left: var(--space--s);
     }
 
     .discover-apartpark p {
@@ -248,8 +256,6 @@
     .overlapping--images {
         width: 75rem;
         height: 66.8rem;
-        /* margin-left: 20.5vw;  */
-        /* margin-left: 21vw; */
         position: relative;
     }
 
@@ -272,8 +278,6 @@
 
     .section-discover-containers {
         width: 25%;
-        display: flex;
-        flex-direction: row;
         border-top: 0.1rem solid #DDEAEA;
         padding-top: 2.8rem;
     }
@@ -283,17 +287,11 @@
     }
 
     .section-discover-containers span {
-        font-family: 'Oranienbaum';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 55px;
-        color: #DDEAEA;
-        padding-right: 1rem;
+        padding-right: var(--space--s);
     }
 
     .section-discover-containers div {
-        padding-top: 1rem;
+        padding-top: var(--space--s);
     }
 
 }

@@ -6,16 +6,29 @@
         min-height: 14rem;
         z-index: 2;
         position: relative;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 4rem;
         border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+        transition: background-color 0.5s;
+    }
+
+    .header--backround {
+        background-color: var(--background-color--secondary);
+        z-index: 3;
+        position: fixed;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
     
     header a {
-        color: var(--button-color--background);
+        color: var(--color--white);
         font-weight: var(--font-weight--bold);
         text-decoration: none;
     }
@@ -51,8 +64,8 @@
         text-align: center;
         border-style: none;
         color: #B0BCD7;
-        margin-bottom: 1.5rem;
-        margin-left: 0.5rem;
+        margin-bottom:  var(--space--m);
+        margin-left:  var(--space--xs);
     }
 
     .header__buttons p {
@@ -66,13 +79,13 @@
         height: 5rem;
         width: 24rem;
         text-transform: uppercase;
-        background-color: #FFFFFF;
+        background-color: var(--color--white);
         color: #2C2C2C;
         font-size: var(--font-size--base);
         border-style: none;
     }
 
     .reservation {
-        padding-left: 1rem;
+        padding-left: var(--space--s);
     }
 }

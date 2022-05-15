@@ -2,7 +2,7 @@
 /* section 3/slider */
 .section_slider {
     background-color: var(--background-color--secondary);
-    color: #FFFFFF;
+    color: var(--color--white);
 }
 
 .section-slider_line {
@@ -40,7 +40,7 @@
 }
 
 .a-all-apartments {
-    font-weight: 700;
+    font-weight: var(--font-weight--bold);
     font-size: var(--font-size--base);
     line-height: 2.4rem;
     letter-spacing: 0.2em;
@@ -84,6 +84,12 @@
   margin-bottom: 0;
 }
 
+.slide {
+  background-color: #172851;
+    padding-bottom: 2.4rem;
+    margin-bottom: 5.2rem;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
   .section_slider {
@@ -100,9 +106,6 @@
 
   .slide {
     width: 100%;
-    background-color: #172851;
-    padding-bottom: 2.4rem;
-    margin-bottom: 5.2rem;
   }
 }  
 
@@ -126,11 +129,7 @@
 
   .slide {
     width: 57%;
-    background-color: #172851;
-    padding-bottom: 2.4rem;
-    margin-bottom: 5.2rem;
     justify-content: center;
-    /* margin-left: 10vw; */
   }
 
   .slider_paragraph {
