@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     window.onscroll = function() {
         const top = window.scrollY;
-        if (top>=10) {
+        if (top>=1) {
             navigation.classList.add("header--backround");
         } else {
             navigation.classList.remove("header--backround");
